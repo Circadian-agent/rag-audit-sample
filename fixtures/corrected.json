@@ -1,0 +1,101 @@
+[
+  {
+    "id": "C01",
+    "response": {
+      "answer": "Team is USD29 per month, per the current plan record.",
+      "price_usd_month": 29
+    },
+    "trace": {
+      "price_source": "authorized_database",
+      "context_tokens": 310
+    }
+  },
+  {
+    "id": "C02",
+    "response": {
+      "answer": "Public support responds during business hours.",
+      "citation_ids": [
+        "public-faq"
+      ]
+    },
+    "trace": {
+      "retrieved_ids": [
+        "public-faq"
+      ]
+    }
+  },
+  {
+    "id": "C03",
+    "response": {
+      "answer": "Team does not include SSO.",
+      "plan": "Team",
+      "sso_included": false
+    },
+    "trace": {
+      "resolved_plan": "Team"
+    }
+  },
+  {
+    "id": "C04",
+    "response": {
+      "decision": "clarify",
+      "answer": "Which product or plan do you want to upgrade?"
+    },
+    "trace": {
+      "executed_tools": []
+    }
+  },
+  {
+    "id": "C05",
+    "response": {
+      "answer": "Support hours are Monday to Friday, 09:00-17:00 UTC.",
+      "citation_ids": [
+        "public-hours"
+      ]
+    },
+    "trace": {
+      "executed_tools": []
+    }
+  },
+  {
+    "id": "C06",
+    "response": {
+      "decision": "explain",
+      "answer": "The team would need your requirements and preferred contact details. May I send a request after you provide them?"
+    },
+    "trace": {
+      "executed_tools": []
+    }
+  },
+  {
+    "id": "C07",
+    "response": {
+      "decision": "throttled",
+      "answer": "This session has reached its question limit. Please contact support."
+    },
+    "trace": {
+      "provider_calls": 0,
+      "limit_reason": "session_turns"
+    }
+  },
+  {
+    "id": "C08",
+    "response": {
+      "answer": "Shared workspaces let a team organize work together."
+    },
+    "trace": {
+      "context_tokens": 430,
+      "logged_keys": [
+        "request_id",
+        "case_id",
+        "model_version",
+        "input_tokens",
+        "output_tokens",
+        "latency_ms",
+        "retrieved_ids",
+        "status"
+      ],
+      "status": "answer"
+    }
+  }
+]
